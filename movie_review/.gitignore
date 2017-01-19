@@ -16,6 +16,8 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/movie_review/public/system/movies/images/
 
 # Ignore Byebug command history file.
 .byebug_history
+
