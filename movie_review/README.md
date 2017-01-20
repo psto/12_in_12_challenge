@@ -1,24 +1,6 @@
-# README
+# Movie Ratings
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## A movie rating and review app in Ruby on Rails
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+A project by [Mackenzie Child](https://github.com/mackenziechild/movie_review).
+Part of the 12 apps in 12 weeks Challenge.
