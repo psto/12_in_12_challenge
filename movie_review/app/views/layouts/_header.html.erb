@@ -21,9 +21,11 @@
           <li><%= link_to "Sign In", new_user_session_path, class: "active" %></li>
         <% end %>
       </ul>
-      <%= search_form_for @q, html: { class: "navbar-form navbar-right" } do |f| %>
-        <%= f.search_field :title_cont, placeholder: "Search...", class: "form-control" %>
-        <%= f.submit "Search", class: "btn btn-default" %>
+      <% if user_signed_in? %>
+        <%= search_form_for @q, html: { class: "navbar-form navbar-right" } do |f| %>
+          <%= f.search_field :title_cont, placeholder: "Search...", class: "form-control" %>
+          <%= f.submit "Search", class: "btn btn-default" %>
+        <% end %>
       <% end %>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

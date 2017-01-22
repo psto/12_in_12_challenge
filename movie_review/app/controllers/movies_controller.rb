@@ -1,9 +1,9 @@
 class MoviesController < ApplicationController
   before_action :set_movie, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
+  before_action :set_search
 
   def index
-    @q = Movie.search(params[:q])
     @movies = @q.result
   end
 
@@ -66,5 +66,9 @@ class MoviesController < ApplicationController
 
     def movie_params
       params.require(:movie).permit(:title, :description, :movie_length, :director, :rating, :image)
+    end
+
+    def set_search
+      @q = Movie.search(params[:q])
     end
 end
